@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>V10 - Click to delete</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <div>
+      <button onclick="handlers.toggleAll()" type="button" name="button">Toggle all</button>
+    </div>
+    <div>
+      <button onclick="handlers.addTodo()" type="button">Add</button>
+      <input id="addTodoTextInput" type="text" placeholder="New Todo">
+    </div>
+    <div>
+      <button onclick="handlers.changeTodo()" type="button" name="button">Change todo</button>
+      <input id="todoChangeTextInput" type="text" placeholder="Change Todo">
+      <input id="todoChangePositionInput" type="number" placeholder="Todo Position">
+    </div>
+    <div>
+      <button onclick="handlers.toggleCompleted()"type="button" name="button">Toggle</button>
+      <input id="toggleCompletedPositionInput" type="number" placeholder="Toggle Todo">
+    </div>
+
+    <ol>
+    </ol>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
